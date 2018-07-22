@@ -1,0 +1,18 @@
+{
+  "name": "scarecrow",
+  "description": "屏蔽相亲帖",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "icons": {
+    "128": "assets/icon128.png"
+  },
+  "browser_action": {
+    "default_icon": "assets/icon128.png"
+  },
+  "content_scripts": [{
+      "js": ["index.js"],
+      "matches": ["https://work.alibaba-inc.com/"],
+      "run_at": "document_end"
+  }],
+  "web_accessible_resources": []
+}
